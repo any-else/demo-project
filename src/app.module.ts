@@ -6,6 +6,7 @@ import ormConfig from './configs/orm.config';
 import ormConfigPro from './configs/orm.config.pro';
 import { UsersModule } from './modules/users/users.module';
 import { AuthModule } from './modules/auth/auth.module';
+import { BrandModule } from './modules/brands/brand.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { AuthModule } from './modules/auth/auth.module';
     }),
     UsersModule,
     AuthModule,
+    BrandModule,
   ],
   controllers: [],
   providers: [
